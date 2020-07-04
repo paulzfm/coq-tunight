@@ -52,7 +52,6 @@ Qed.
 
 (** Disjunction/or *)
 Check or.
-Print or.
 
 Lemma or_intro1 : forall P Q : Prop, P -> P \/ Q.
 Proof.
@@ -122,8 +121,8 @@ Example auto_example : forall P Q R S T U : Prop,
   P ->
   U.
 Proof.
-  intuition.
-  (* auto. *)
+  (* intuition. *)
+  auto.
 Qed.
 
 (* Existential quantification *)
@@ -179,9 +178,12 @@ Definition or_commute_iff P Q : P \/ Q <-> Q \/ P := ??? *)
 
 (* Equality *)
 Print eq.
-Check eq_refl.
+Check @eq_refl.
 
 Definition four_eq_four : 2 + 2 = 1 + 3 := eq_refl 4.
 Check four_eq_four.
+
+Fact four_eq_four' : 2 + 2 = 1 + 3.
+Proof. simpl. reflexivity. Qed.
 
 End CurryHoward.

@@ -1,7 +1,7 @@
 % !TEX program = xelatex
 
-% \documentclass[usenames,xcolor=svgnames,11pt,sans,aspectratio=169,handout]{beamer}
-\documentclass[usenames,xcolor=svgnames,11pt,sans,aspectratio=169]{beamer}
+\documentclass[usenames,xcolor=svgnames,11pt,sans,aspectratio=169,handout]{beamer}
+% \documentclass[usenames,xcolor=svgnames,11pt,sans,aspectratio=169]{beamer}
 \usetheme{Madrid}
 \colorlet{theme}{DarkGreen}
 \usecolortheme[named=theme]{structure}
@@ -285,7 +285,7 @@
     \inference[num-zero]{}{\num\z}
     \and \inference[num-succ]{\num{n}}{\num{(\s{n}})} \\
     \and \inference[lst-nil]{}{\lst\nil}
-    \and \inference[lst-cons]{\num{n} & \lst{n}}{\lst{(\cons{n}{l}})} \\
+    \and \inference[lst-cons]{\num{n} & \lst{l}}{\lst{(\cons{n}{l}})} \\
     \and \val{t} := \num{t} \lor \lst{t}
   \end{mathpar}
 \end{frame}

@@ -9,6 +9,7 @@ Inductive list (X: Type) : Type :=
   | cons : X -> list X -> list X.
 
 Check list.
+Check list nat.
 Check nil. (* X: Type -> list X *)
 Check (nil nat).
 Check cons.
@@ -54,7 +55,7 @@ Qed.
 
 (* Exercise: *)
 Lemma app_assoc : forall X (l m n : list X),
-  l ++ m ++ n = (l ++ m) ++ n.
+  l ++ (m ++ n) = (l ++ m) ++ n.
 Admitted.
 
 (* Reverse a list *)
