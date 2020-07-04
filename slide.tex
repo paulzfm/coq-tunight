@@ -56,25 +56,25 @@
 % contents
 \AtBeginSection[]
 {
-    \begin{frame}{Contents}
-    	\tableofcontents[currentsection]
-	\end{frame}
+  \begin{frame}{Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
 }
 
 \AtBeginSubsection[]
 {
-    \begin{frame}{Contents}
-    	\tableofcontents[currentsubsection]
+  \begin{frame}{Contents}
+    \tableofcontents[currentsubsection]
 	\end{frame}
 }
 
 % titlepage
 \begin{frame}
-    \titlepage
+  \titlepage
 \end{frame}
 
 \begin{frame}{Today}
-    \tableofcontents
+  \tableofcontents
 \end{frame}
 
 \section{Introduction}
@@ -130,8 +130,8 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Why Formal Proof?}
-  \linespread{1.8}
+\begin{frame}{Why Proof?}
+  \linespread{1.5}
   \begin{quote}
     If debugging is the process of removing bugs, then programming must be the process of putting them in.
 
@@ -140,7 +140,7 @@
 \end{frame}
 
 \begin{frame}{Why Formal Proof?}
-  \linespread{1.8}
+  \linespread{1.5}
   \begin{quote}
     \begin{center}
       西江月·数学证明题
@@ -151,6 +151,13 @@
     反之亦然同理，推论自然成立。略去过程QED，由上可知证毕。
 
     \rightline{-- 佚名}
+  \end{quote}
+  \vspace{1cm}
+  \pause
+  \begin{quote}
+    And last, but not least, thanks to the Coq team, because without Coq there would be no proof.
+
+    \rightline{-- Russell O'Connor}
   \end{quote}
 \end{frame}
 
@@ -335,7 +342,8 @@
     \item Solver-aided programming languages:
     \href{https://www.rise4fun.com/Dafny}{Dafny},
     \href{https://emina.github.io/rosette/}{Rosette}
-    \item Software model checking framework: BLAST,
+    \item Software model checking framework: 
+    \href{http://goto.ucsd.edu/~rjhala/blast.html}{BLAST},
     \href{https://cpachecker.sosy-lab.org}{CPAChecker},
     \href{https://monteverdi.informatik.uni-freiburg.de/tomcat/Website/?ui=tool&tool=automizer}{Ultimate Automizer},
     \href{https://www.cprover.org/cbmc/}{CBMC}

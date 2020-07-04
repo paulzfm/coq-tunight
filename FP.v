@@ -108,6 +108,11 @@ Definition leftpad (c : ascii) (n : nat) (s : list ascii) :=
 
 Print repeat.
 
+Open Scope char_scope.
+
+Eval compute in (leftpad " " 4 ["t"; "u"; "n"; "i"; "g"; "h"; "t"]).
+Eval compute in (leftpad " " 10 ["t"; "u"; "n"; "i"; "g"; "h"; "t"]).
+
 Theorem leftpad_length : forall c n s,
   length (leftpad c n s) = max n (length s).
 Proof.

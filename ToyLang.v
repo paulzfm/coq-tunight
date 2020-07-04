@@ -279,7 +279,7 @@ Proof with eauto.
 Abort.
 
 (* counterexample: *)
-Example idx_nil := idx zero nil.
+Definition idx_nil := idx zero nil.
 
 Definition stuck (t : tm) : Prop :=
   step_normal_form t /\ ~ value t.
